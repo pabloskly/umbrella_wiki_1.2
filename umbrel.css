@@ -14,14 +14,15 @@
     /* Brand Colors */
     --umbrella-red: var(--primary);
     --umbrella-white: var(--primary-contrast);
-
+    --umbrella-black: #000000;
     /* Virus Colors */
     --t-virus-blue: #0077ff;
     --t-virus-glow: rgba(0, 119, 255, 0.4);
 
     --plagas-orange: #ff8400;
     --plagas-glow: rgba(255, 132, 0, 0.4);
-
+    --plagas-blue: #0099ff;
+    --plagas-glow: rgba(0, 153, 255, 0.4);
     --bow-green: #00ff22;
     --bow-glow: rgba(0, 255, 34, 0.4);
 
@@ -384,7 +385,7 @@ html {
 
 .desc {
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.77rem;
     margin-bottom: 2rem;
     flex-grow: 1;
 }

@@ -1,0 +1,4 @@
+/* --- 3. UTILIDADES DE TEXTO Y RESALTADO --- */
+.highlight-red {
+    color: var(--umbrella-red);
+}

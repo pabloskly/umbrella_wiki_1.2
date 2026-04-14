@@ -1,0 +1,36 @@
+/* --- 5. SECCIÓN PRINCIPAL (HERO BANNERS) --- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1549643276-fbc2d8ce01df?q=80&w=2000&auto=format&fit=crop') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.classified {
+    color: var(--umbrella-red);
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    font-family: 'Inter', monospace;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}

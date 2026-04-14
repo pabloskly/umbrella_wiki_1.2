@@ -1,0 +1,27 @@
+/* --- 2. RESET Y ESTILOS BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.overlay-tag {
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+}
+
+html {
+    scroll-behavior: smooth;
+}

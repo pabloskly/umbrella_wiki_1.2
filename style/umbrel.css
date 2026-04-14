@@ -50,11 +50,7 @@ body {
 h1,
 h2,
 h3,
-.brand-name,
-.overlay-tag,
-.cart-btn,
-.buy-btn,
-.cta-btn {
+.overlay-tag {
     font-family: 'Rajdhani', sans-serif;
     text-transform: uppercase;
 }
@@ -66,21 +62,6 @@ html {
 /* --- 3. UTILIDADES DE TEXTO Y RESALTADO --- */
 .highlight-red {
     color: var(--umbrella-red);
-}
-
-.highlight-t {
-    color: var(--t-virus-blue);
-    text-shadow: 0 0 10px var(--t-virus-glow);
-}
-
-.highlight-g {
-    color: var(--plagas-orange);
-    text-shadow: 0 0 10px var(--plagas-glow);
-}
-
-.highlight-bow {
-    color: var(--bow-green);
-    text-shadow: 0 0 10px var(--bow-glow);
 }
 
 /* --- 4. BARRA DE NAVEGACIÓN (NAVBAR) --- */
@@ -112,11 +93,6 @@ html {
     filter: drop-shadow(0 0 5px rgba(204, 0, 0, 0.5));
 }
 
-.brand-name {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
 
 .nav-links {
     display: flex;
@@ -151,25 +127,6 @@ html {
 
 .nav-links a:hover::after {
     width: 100%;
-}
-
-.cart-btn {
-    background: transparent;
-    color: var(--umbrella-red);
-    border: 1px solid var(--umbrella-red);
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-    font-weight: 700;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(204, 0, 0, 0.1) inset;
-}
-
-.cart-btn:hover {
-    background: var(--umbrella-red);
-    color: var(--umbrella-white);
-    box-shadow: 0 0 15px rgba(204, 0, 0, 0.5);
 }
 
 /* --- 5. SECCIÓN PRINCIPAL (HERO BANNERS) --- */
@@ -209,24 +166,7 @@ html {
     margin: 0 auto 3rem auto;
 }
 
-.cta-btn {
-    display: inline-block;
-    background: var(--umbrella-white);
-    color: var(--bg-dark);
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 1.5px;
-    transition: all 0.3s ease;
-}
 
-.cta-btn:hover {
-    background: var(--umbrella-red);
-    color: var(--umbrella-white);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(204, 0, 0, 0.3);
-}
 
 /* --- 6. SECCIÓN DE CATEGORÍAS Y CATÁLOGO --- */
 .catalog {
@@ -235,61 +175,7 @@ html {
     margin: 0 auto;
 }
 
-.category-section {
-    margin-bottom: 6rem;
-    animation: fadeIn 1s ease-out;
-}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.section-header {
-    margin-bottom: 3rem;
-}
-
-.section-header h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
-}
-
-.section-header p {
-    color: var(--text-muted);
-    font-size: 1rem;
-    max-width: 800px;
-}
-
-.divider {
-    height: 3px;
-    width: 60px;
-    margin-bottom: 1.5rem;
-    border-radius: 2px;
-}
-
-.t-divider {
-    background: var(--t-virus-blue);
-    box-shadow: 0 0 10px var(--t-virus-blue);
-}
-
-.g-divider {
-    background: var(--plagas-orange);
-    box-shadow: 0 0 10px var(--plagas-orange);
-}
-
-.bow-divider {
-    background: var(--bow-green);
-    box-shadow: 0 0 10px var(--bow-green);
-}
 
 /* --- 7. TARJETAS DE PRODUCTO / ELEMENTOS (CARDS) --- */
 .product-grid {
@@ -377,13 +263,7 @@ html {
     letter-spacing: 0.5px;
 }
 
-.price {
-    color: var(--umbrella-red);
-    font-family: 'Rajdhani', monospace;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
+
 
 .desc {
     color: var(--text-muted);
@@ -392,32 +272,7 @@ html {
     flex-grow: 1;
 }
 
-.buy-btn {
-    width: 100%;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--umbrella-white);
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-.buy-btn:hover:not(.disabled) {
-    background: var(--umbrella-red);
-    border-color: var(--umbrella-red);
-}
-
-.buy-btn.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    background: repeating-linear-gradient(45deg,
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2) 10px,
-            rgba(255, 0, 0, 0.1) 10px,
-            rgba(255, 0, 0, 0.1) 20px);
-}
 
 /* --- 8. PIE DE PÁGINA (FOOTER) --- */
 footer {
@@ -451,13 +306,7 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
-.warning {
-    color: var(--umbrella-red);
-    font-size: 0.75rem;
-    margin-top: 2rem;
-    letter-spacing: 1px;
-    opacity: 0.8;
-}
+
 
 /* --- 9. DISEÑO RESPONSIVO (MÓVILES Y TABLETS) --- */
 @media (max-width: 900px) {

@@ -1,0 +1,32 @@
+/* --- 1. VARIABLES GLOBALES Y COLORES --- */
+:root {
+    /* --- Paleta Accesible (WCAG AA/AAA) --- */
+    --bg: #121212;
+    --bg-text: #E0E0E0;
+    --primary: #CC0000;
+    --primary-contrast: #FFFFFF;
+
+    /* --- Base Variables Mapped --- */
+    --bg-dark: var(--bg);
+    --bg-panel: #1a1a1a;
+    --text-main: var(--bg-text);
+    --text-muted: rgba(224, 224, 224, 0.6);
+
+    /* Brand Colors */
+    --umbrella-red: var(--primary);
+    --umbrella-white: var(--primary-contrast);
+    --umbrella-black: #000000;
+    /* Virus Colors */
+    --t-virus-blue: #0077ff;
+    --t-virus-glow: rgba(0, 119, 255, 0.4);
+
+    --plagas-orange: #ff8400;
+    --plagas-glow: rgba(255, 132, 0, 0.4);
+    --plagas-blue: #0099ff;
+    --plagas-glow: rgba(0, 153, 255, 0.4);
+    --bow-green: #00ff22;
+    --bow-glow: rgba(0, 255, 34, 0.4);
+
+    --glass-bg: rgba(20, 20, 20, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}

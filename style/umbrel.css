@@ -1,5 +1,6 @@
+/* --- 1. VARIABLES GLOBALES Y COLORES --- */
 :root {
-    /* --- Accessible Palette (WCAG AA/AAA) --- */
+    /* --- Paleta Accesible (WCAG AA/AAA) --- */
     --bg: #121212;
     --bg-text: #E0E0E0;
     --primary: #CC0000;
@@ -30,6 +31,7 @@
     --glass-border: rgba(255, 255, 255, 0.1);
 }
 
+/* --- 2. RESET Y ESTILOS BASE --- */
 * {
     margin: 0;
     padding: 0;
@@ -61,7 +63,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Typography Highlights */
+/* --- 3. UTILIDADES DE TEXTO Y RESALTADO --- */
 .highlight-red {
     color: var(--umbrella-red);
 }
@@ -81,7 +83,7 @@ html {
     text-shadow: 0 0 10px var(--bow-glow);
 }
 
-/* --- Navbar --- */
+/* --- 4. BARRA DE NAVEGACIÓN (NAVBAR) --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -170,7 +172,7 @@ html {
     box-shadow: 0 0 15px rgba(204, 0, 0, 0.5);
 }
 
-/* --- Hero Section --- */
+/* --- 5. SECCIÓN PRINCIPAL (HERO BANNERS) --- */
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1549643276-fbc2d8ce01df?q=80&w=2000&auto=format&fit=crop') no-repeat center center/cover;
@@ -226,7 +228,7 @@ html {
     box-shadow: 0 10px 20px rgba(204, 0, 0, 0.3);
 }
 
-/* --- Catalog Section --- */
+/* --- 6. SECCIÓN DE CATEGORÍAS Y CATÁLOGO --- */
 .catalog {
     padding: 5rem 4rem;
     max-width: 1400px;
@@ -289,7 +291,7 @@ html {
     box-shadow: 0 0 10px var(--bow-green);
 }
 
-/* --- Product Cards --- */
+/* --- 7. TARJETAS DE PRODUCTO / ELEMENTOS (CARDS) --- */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -313,7 +315,7 @@ html {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Hover glow effects based on data attribute */
+/* Efectos de brillo al pasar el cursor (Hover) según el atributo de datos */
 .product-card[data-virus="t"]:hover {
     box-shadow: 0 15px 30px var(--t-virus-glow);
     border-color: var(--t-virus-blue);
@@ -417,7 +419,7 @@ html {
             rgba(255, 0, 0, 0.1) 20px);
 }
 
-/* --- Footer --- */
+/* --- 8. PIE DE PÁGINA (FOOTER) --- */
 footer {
     background: #000;
     padding: 4rem 2rem 2rem;
@@ -457,7 +459,7 @@ footer p {
     opacity: 0.8;
 }
 
-/* --- Responsive --- */
+/* --- 9. DISEÑO RESPONSIVO (MÓVILES Y TABLETS) --- */
 @media (max-width: 900px) {
     .navbar {
         padding: 1rem 2rem;
@@ -487,7 +489,7 @@ footer p {
     }
 }
 
-/* --- Wiki Layout --- */
+/* --- 10. DISEÑO ESPECÍFICO DE LA WIKI --- */
 .hero.wiki-hero {
     height: 50vh;
 }

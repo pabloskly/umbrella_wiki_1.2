@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- ==========================================
+     ENCABEZADO DEL DOCUMENTO (HEAD)
+     ==========================================
+     Contiene la configuración vital de la página:
+     metaetiquetas para pantalla, título de pestaña,
+     enlaces a fuentes externas y la hoja de estilos. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +19,13 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- ==========================================
+         BARRA DE NAVEGACIÓN (NAVBAR)
+         ==========================================
+         Contiene el logotipo principal y los enlaces 
+         de anclaje que permiten al usuario moverse 
+         rápidamente a los diferentes catálogos de 
+         la página (Juegos, Personajes, etc.). -->
     <nav class="navbar">
         <div class="logo-container">
             <img src="images/umbrella_icon.png"
@@ -27,7 +39,13 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ==========================================
+         SECCIÓN HERO (ENCABEZADO PRINCIPAL)
+         ==========================================
+         Es la primera impresión visual de la página.
+         Muestra el título principal, subtítulo y 
+         un fondo inmersivo. Suele atrapar la atención
+         y establecer el tono visual (clasificado/oscuro). -->
     <header class="hero wiki-hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -39,10 +57,21 @@
 
     <main class="catalog">
         <div class="wiki-container">
-            <!-- Main Content -->
+            <!-- ==========================================
+                 CONTENIDO PRINCIPAL (WIKI CONTENT)
+                 ==========================================
+                 El contenedor <article> agrupa todas las
+                 secciones de la enciclopedia. Cada <section>
+                 representa una categoría temática diferente
+                 con una cuadrícula (grid) de tarjetas. -->
             <article class="wiki-content">
 
-                <!-- JUEGOS -->
+                <!-- ==========================================
+                     SECCIÓN: CATÁLOGO DE JUEGOS
+                     ==========================================
+                     Muestra los eventos históricos de la saga. 
+                     Cada juego es presentado en formato de 
+                     tarjeta con imagen, año, título y sinopsis. -->
                 <section id="juegos" class="wiki-section">
                     <h2>Catálogo de Juegos (Registros)</h2>
                     <p>Los incidentes registrados por nuestro sistema de vigilancia global están catalogados por eventos
@@ -103,7 +132,12 @@
 
                 <hr style="border: 1px solid var(--glass-border); margin: 3rem 0;">
 
-                <!-- PERSONAJES -->
+                <!-- ==========================================
+                     SECCIÓN: CATÁLOGO DE PERSONAJES
+                     ==========================================
+                     Lista a los agentes operativos, civiles y 
+                     antagonistas. Cada tarjeta incluye etiquetas 
+                     dinámicas que describen su rol principal. -->
                 <section id="personajes" class="wiki-section">
                     <h2>Catálogo de Personajes (Sujetos)</h2>
                     <p>Agentes operativos, civiles clave y ex-afiliados a nuestra corporación en estado paradero o
@@ -169,12 +203,49 @@
                                 <p class="desc">Buscaba a su hermano durante el incidente de Raccoon City y se convirtió en una sobreviviente clave. Actualmente es miembro activo de la ONG TerraSave.</p>
                             </div>
                         </div>
+
+                        <div class="product-card" data-virus="t">
+                            <div class="card-img">
+                                <img src="images/ada_wong-4.webp" alt="Ada Wong">
+                                <div class="overlay-tag">ESPÍA</div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Ada Wong</h3>
+                                <p class="desc">Agente doble de inteligencia con lealtades ambiguas. Especialista en infiltración y recuperación de datos clasificados de Umbrella.</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-virus="t">
+                            <div class="card-img">
+                                <img src="images/jack_krauser.jpg" alt="Jack Krauser">
+                                <div class="overlay-tag">TRAIDOR</div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Jack Krauser</h3>
+                                <p class="desc">Oficial especial corrupto que se alió con Los Illuminados. Posee implante parasitario de alto nivel y habilidades de combate aumentadas.</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-virus="t">
+                            <div class="card-img">
+                                <img src="images/saddler.jpg" alt="Osmund Saddler">
+                                <div class="overlay-tag">ANTAGONISTA</div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Osmund Saddler</h3>
+                                <p class="desc">Líder del culto de Los Illuminados y portador de la Plaga de Control. Amenaza crítica clasificada en los registros de incidentes.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <hr style="border: 1px solid var(--glass-border); margin: 3rem 0;">
 
-                <!-- PATÓGENOS -->
+                <!-- ==========================================
+                     SECCIÓN: CATÁLOGO DE PATÓGENOS
+                     ==========================================
+                     Presenta los diferentes virus y parásitos 
+                     causantes de los incidentes biológicos. -->
                 <section id="patogenos" class="wiki-section">
                     <h2>Catálogo de Patógenos (Virus)</h2>
                     <p>Agentes biológicos, parásitos y cepas desarrolladas clandestinamente para forzar armamento
@@ -226,7 +297,12 @@
 
                 <hr style="border: 1px solid var(--glass-border); margin: 3rem 0;">
 
-                <!-- CRIATURAS (BOWS) -->
+                <!-- ==========================================
+                     SECCIÓN: CATÁLOGO DE CRIATURAS (B.O.W.s)
+                     ==========================================
+                     Enumera a las armas bioorgánicas destacadas,
+                     especificando su origen y puntos débiles
+                     (estrategias para enfrentarlas). -->
                 <section id="criaturas" class="wiki-section">
                     <h2>Catálogo Destacado de B.O.W.s (Criaturas)</h2>
                     <p>Armas bioorgánicas de nuestra matriz Umbrella, categorizadas desde fallos genéticos hasta
@@ -391,7 +467,13 @@
                 </section>
             </article>
 
-            <!-- Infobox -->
+            <!-- ==========================================
+                 PANEL LATERAL TIPO WIKIPEDIA (INFOBOX)
+                 ==========================================
+                 La etiqueta <aside> contiene atributos clave
+                 de la Corporación Umbrella para un rápido 
+                 vistazo. Se ubica flotante a la derecha en
+                 pantallas anchas o apilado en móviles. -->
             <aside class="wiki-infobox">
                 <h3>Corporación Umbrella</h3>
                 <img src="images/umbrella_icon.png"
@@ -434,6 +516,12 @@
         </div>
     </main>
 
+    <!-- ==========================================
+         PIE DE PÁGINA (FOOTER)
+         ==========================================
+         Cierra el documento con los derechos de autor
+         y marca de tiempo. Usa la etiqueta <address> 
+         y <time> para información semántica. -->
     <footer aria-label="Pie de página del sitio">
         <address class="footer-content" style="font-style: normal;">
             <figure style="margin: 0; padding: 0;">

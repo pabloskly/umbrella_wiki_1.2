@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- ==========================================
+     ENCABEZADO DEL DOCUMENTO (HEAD)
+     ==========================================
+     Contiene la configuración vital de la página:
+     metaetiquetas para pantalla, título de pestaña,
+     enlaces a fuentes externas y la hoja de estilos. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +19,13 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- ==========================================
+         BARRA DE NAVEGACIÓN (NAVBAR)
+         ==========================================
+         Contiene el logotipo principal y los enlaces 
+         de anclaje que permiten al usuario moverse 
+         rápidamente a los diferentes catálogos de 
+         la página (Juegos, Personajes, etc.). -->
     <nav class="navbar">
         <div class="logo-container">
             <a href="umbrel.html" style="display:flex; align-items:center; text-decoration:none; color:inherit;">
@@ -29,7 +41,13 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ==========================================
+         SECCIÓN HERO (ENCABEZADO PRINCIPAL)
+         ==========================================
+         Es la primera impresión visual de la página.
+         Muestra el título principal, subtítulo y 
+         un fondo inmersivo. Suele atrapar la atención
+         y establecer el tono visual (clasificado/oscuro). -->
     <header class="hero wiki-hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -41,8 +59,19 @@
 
     <main class="catalog">
         <div class="wiki-container">
-            <!-- Main Content -->
+            <!-- ==========================================
+                 CONTENIDO PRINCIPAL (WIKI CONTENT)
+                 ==========================================
+                 El contenedor <article> agrupa todas las
+                 secciones de la enciclopedia. Cada <section>
+                 representa una categoría temática diferente
+                 con una cuadrícula (grid) de tarjetas. -->
             <article class="wiki-content">
+                <!-- ==========================================
+                     SECCIÓN: CATÁLOGO DE PATÓGENOS
+                     ==========================================
+                     Presenta los diferentes virus y parásitos 
+                     causantes de los incidentes biológicos. -->
                 <section id="patogenos" class="wiki-section">
                     <h2>Catálogo de Patógenos (Virus)</h2>
                     <p>Agentes biológicos, parásitos y cepas desarrolladas clandestinamente para forzar armamento
@@ -91,7 +120,13 @@
                 </section>
             </article>
 
-            <!-- Infobox -->
+            <!-- ==========================================
+                 PANEL LATERAL TIPO WIKIPEDIA (INFOBOX)
+                 ==========================================
+                 La etiqueta <aside> contiene atributos clave
+                 de la Corporación Umbrella para un rápido 
+                 vistazo. Se ubica flotante a la derecha en
+                 pantallas anchas o apilado en móviles. -->
             <aside class="wiki-infobox">
                 <h3>Corporación Umbrella</h3>
                 <img src="images/umbrella_icon.png" alt="Umbrella Corporation Logo">
@@ -133,6 +168,12 @@
         </div>
     </main>
 
+    <!-- ==========================================
+         PIE DE PÁGINA (FOOTER)
+         ==========================================
+         Cierra el documento con los derechos de autor
+         y marca de tiempo. Usa la etiqueta <address> 
+         y <time> para información semántica. -->
     <footer aria-label="Pie de página del sitio">
         <address class="footer-content" style="font-style: normal;">
             <figure style="margin: 0; padding: 0;">

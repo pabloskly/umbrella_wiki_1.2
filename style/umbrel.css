@@ -80,26 +80,21 @@ html {
     z-index: 1000;
     transition: all 0.3s ease;
 }
-
 .logo-container {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-
 .logo {
     height: 40px;
     width: auto;
     filter: drop-shadow(0 0 5px rgba(204, 0, 0, 0.5));
 }
-
-
 .nav-links {
     display: flex;
     list-style: none;
     gap: 2.5rem;
 }
-
 .nav-links a {
     color: var(--text-main);
     text-decoration: none;
@@ -109,7 +104,6 @@ html {
     transition: color 0.3s ease;
     position: relative;
 }
-
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -120,15 +114,12 @@ html {
     background-color: var(--umbrella-red);
     transition: width 0.3s ease;
 }
-
 .nav-links a:hover {
     color: var(--umbrella-white);
 }
-
 .nav-links a:hover::after {
     width: 100%;
 }
-
 /* --- 5. SECCIÓN PRINCIPAL (HERO BANNERS) --- */
 .hero {
     height: 100vh;
@@ -141,7 +132,6 @@ html {
     padding: 0 2rem;
     position: relative;
 }
-
 .classified {
     color: var(--umbrella-red);
     font-size: 0.85rem;
